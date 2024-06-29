@@ -29,7 +29,7 @@ export function sessionConfig(app) {
     app.use(session({
         store: MongoStore.create({
             mongoUrl: process.env.MONGO_URL,
-            ttl: 100
+            ttl: 500
         }),
         secret: "53cr37k3Y",
         resave: false,
